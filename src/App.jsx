@@ -1,16 +1,26 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import "./CSS/App.css"
+import Header from './Components/Header'
 import Homepage from './Components/Homepage'
+import About from './Components/About'
+import MyStats from './Components/MyStats'
 
 function App() {
   const [count, setCount] = useState(0)
 
+
   return (
     <>
     <div className='wrapper'>
-     <Homepage />
+     <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path='/' element={<Homepage />}/>
+        <Route path='/about' element={<About />} />
+        <Route path='/my-stats' element={<MyStats />} />
+      </Routes>
+     </BrowserRouter>
      </div>
     </>
   )

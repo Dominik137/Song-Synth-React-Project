@@ -1,5 +1,21 @@
 #Title {
-    font-family: myFirstFont;
-    src: url(../moshita_mono.woff);
-    font-size: 50px;
+    font-family: 'Chakra Petch', sans-serif;
+    font-style: italic;
+    font-size: 100px;
+    position: relative;
+    bottom: 60px;
+}
+
+.headerButton{
+    font-family: 'Chakra Petch', sans-serif;
+    position: relative;
+    bottom: 100px;
+    font-size: 20px;
+
+}
+
+.headerButton:hover{
+    background-color: #4CAF50; /* change the background color */
+    color: white;
+    cursor: pointer;
 }
