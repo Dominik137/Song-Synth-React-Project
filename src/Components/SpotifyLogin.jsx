@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import ArtistCard from './ArtistCard'
+import SpotifyGetPlaylists from './SpotifyGetPlaylists'
 
 
 function SpotifyLogin(){
@@ -50,22 +50,54 @@ function SpotifyLogin(){
                     type: "artist"
                 }
             })
-    
-    
-        
-        
-        
+            
+         
+            
                 const artistMap =  data.artists.items.map(artist => (
+                <>
+                <div></div>
                 <div key={artist.id}>
                     {artist.images.length ? <img width={"100px"} src={artist.images[0].url} alt=""/> : <div>No Image</div>}
-                    {artist.name}
+                    <h1>{artist.name}</h1>
+                    <h2 className="font-body mb-4">Followers: {artist.followers.total.toLocaleString()}</h2>
+                    {console.log(artist)}
+                    <button onClick={()=>{
+                        fetch('http://localhost:3000/savedArtists',{
+                            method:"POST",
+                             headers:{ 'Content-Type': 'application/json'
+                             },
+                            body: JSON.stringify({
+                                "name": artist.name,
+                                "image": artist.images[0],
+                                "followers": artist.followers.total
+                            })
+                             })
+                             
+                        }} className="text-xs relative bottom-2 left-3
+                 bg-transparent hover:bg-green-600 hover:text-black py-2 px-4 border border-black hover:border-transparent">Save</button>
                 </div>
+                </>
+
+    //     function addPlant(newPlant){
+    // fetch('http://localhost:6001/plants',{
+    //   method:"POST",
+    //   headers:{
+    //     'Content-Type': 'application/json'
+    //   },
+    //   body: JSON.stringify(newPlant)
+  
+    // })
+
+
             ))
             setPeps(artistMap)
             setArtists(data.artists.items)
-        }       
+        }   
+        
+       
     return(
-        <div className="font-body flex flex-col items-center ">
+        <>
+        <div className="font-body place-items-center ">
            <header className="">
            {!token ?
             <button className="font-body text-3xl relative top-12
@@ -80,7 +112,7 @@ function SpotifyLogin(){
                 {token ?
                     <form className=" text-center relative top-12 pb-4 " onSubmit={searchArtists}> 
                     <h1 className="font-body text-3xl ">Search Artists!</h1>
-                        <input className="border border-black bg-white focus:outline-none relative left-10" type="text" onChange={e => setSearchKey(e.target.value)}/>
+                        <input className="border border-black bg-white focus:outline-none relative left-8" type="text" onChange={e => setSearchKey(e.target.value)}/>
                         <button className="font-body text-xs relative top-0 left-12
             bg-transparent hover:bg-green-600 hover:text-black py-2 px-4 border border-black hover:border-transparent"  type={"submit"} >Search
                         </button>
@@ -89,11 +121,12 @@ function SpotifyLogin(){
                     : <h2 ></h2>
                 }
 
-               <div className="flex flex-col items-center relative top-10 mt-12"><ArtistCard peps={peps} /></div>
-                
+               <div className="flex flex-col items-center relative top-10 mt-12">{peps}</div>
+               {token ? <SpotifyGetPlaylists /> : ""}
         
             </header>
         </div>
+        </>
     )
 }
  

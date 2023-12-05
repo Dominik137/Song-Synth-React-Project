@@ -1,0 +1,34 @@
+{
+  "savedArtists": [
+    {
+      "name": "André 3000",
+      "image": {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab6761610000e5eb1984263efe557e8116f0780a",
+        "width": 640
+      },
+      "followers": 458743,
+      "id": 4
+    },
+    {
+      "name": "A$AP Rocky",
+      "image": {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab6761610000e5eb5c58c41a506a0d6b32cc6cad",
+        "width": 640
+      },
+      "followers": 13186436,
+      "id": 5
+    },
+    {
+      "name": "Dominic Fike",
+      "image": {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab6761610000e5ebbe491d3676793a1697c61254",
+        "width": 640
+      },
+      "followers": 1431608,
+      "id": 6
+    }
+  ]
+}

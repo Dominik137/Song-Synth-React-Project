@@ -10,7 +10,7 @@ function App() {
  
  return (
     <>
-    <div className='bg-gradient-to-b from-gray-300 to-transparent p-10 p-full '>
+    <div className='bg-gradient-to-b from-gray-300 to-transparent p-10 p-full grid gap-3 grid-cols-3 grid-rows-2 '>
      <BrowserRouter>
       <Header />
       <Routes>
