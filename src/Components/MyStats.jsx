@@ -15,8 +15,8 @@ function MyStats(){
 
     const mapSavedArtists = savedArtists.map((item)=>{
         return(<div>
-            <h1 className="font-normal text-md text-center">{item.name}</h1>
-            <p>followers {item.followers.toLocaleString()}</p>
+            <h1 className="myStatsText">{item.name}</h1>
+            <p className="myStatsText">Followers: {item.followers.toLocaleString()}</p>
             {/* <img>{item.image.url}</img> */}
 
         </div>)
@@ -25,8 +25,8 @@ function MyStats(){
 
 
     return(
-        <div className=" flex justify-center items-center">
-            <h1 className="font-body font-bold text-4xl ">
+        <div className="column">
+            <h1 className="">
                 Saved Artists!
                 {mapSavedArtists}
             </h1>

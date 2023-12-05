@@ -29,6 +29,26 @@
       },
       "followers": 1431608,
       "id": 6
+    },
+    {
+      "name": "Doja Cat",
+      "image": {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab6761610000e5eb7f6d6cac38d494e87692af99",
+        "width": 640
+      },
+      "followers": 27573677,
+      "id": 7
+    },
+    {
+      "name": "Danny Brown",
+      "image": {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab6761610000e5eb196db1757e46efbecd7314c6",
+        "width": 640
+      },
+      "followers": 822548,
+      "id": 8
     }
   ]
 }

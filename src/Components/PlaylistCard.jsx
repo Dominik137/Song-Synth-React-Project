@@ -8,7 +8,9 @@ console.log(data.items)
        <>
        <div>
         {data.items?.map((item)=>{
-           return( <p>{item.name}</p>)
+           return( <>
+           <p>{item.name}</p>
+           </>)
         })}
        </div>
        </>

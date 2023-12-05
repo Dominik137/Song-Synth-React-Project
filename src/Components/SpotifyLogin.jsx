@@ -56,7 +56,7 @@ function SpotifyLogin(){
                 const artistMap =  data.artists.items.map(artist => (
                 <>
                 <div></div>
-                <div key={artist.id}>
+                <div className="reulstsCont" key={artist.id}>
                     {artist.images.length ? <img width={"100px"} src={artist.images[0].url} alt=""/> : <div>No Image</div>}
                     <h1>{artist.name}</h1>
                     <h2 className="font-body mb-4">Followers: {artist.followers.total.toLocaleString()}</h2>
@@ -73,55 +73,39 @@ function SpotifyLogin(){
                             })
                              })
                              
-                        }} className="text-xs relative bottom-2 left-3
-                 bg-transparent hover:bg-green-600 hover:text-black py-2 px-4 border border-black hover:border-transparent">Save</button>
+                        }} className="saveButton">Save</button>
                 </div>
                 </>
-
-    //     function addPlant(newPlant){
-    // fetch('http://localhost:6001/plants',{
-    //   method:"POST",
-    //   headers:{
-    //     'Content-Type': 'application/json'
-    //   },
-    //   body: JSON.stringify(newPlant)
-  
-    // })
-
-
             ))
             setPeps(artistMap)
             setArtists(data.artists.items)
         }   
         
-       
     return(
         <>
-        <div className="font-body place-items-center ">
+        <div className="">
            <header className="">
-           {!token ?
-            <button className="font-body text-3xl relative top-12
-            bg-transparent hover:bg-green-600 hover:text-black py-2 px-4 border border-black hover:border-transparent "  >
-                <a
+           <div className="logoutLogin">{!token ?
+            <button className="button"  >
+                <a className="anchor"
            href={`${authEndpoint}?client_id=${clientId}&redirect_uri=${redirectURI}&response_type=${respType}`}>Login to Spotify</a>
             </button>
-            : <button className="font-body text-3xl absolute top-0 right-0
-            bg-transparent hover:bg-green-600 hover:text-black py-2 px-4 border border-black hover:border-transparent "
+            : <button className="button"
             onClick={logout}>Logout</button>}
-
+            </div>
+                <div className="searchArtistCont">
                 {token ?
-                    <form className=" text-center relative top-12 pb-4 " onSubmit={searchArtists}> 
-                    <h1 className="font-body text-3xl ">Search Artists!</h1>
-                        <input className="border border-black bg-white focus:outline-none relative left-8" type="text" onChange={e => setSearchKey(e.target.value)}/>
-                        <button className="font-body text-xs relative top-0 left-12
-            bg-transparent hover:bg-green-600 hover:text-black py-2 px-4 border border-black hover:border-transparent"  type={"submit"} >Search
+                    <form className="" onSubmit={searchArtists}> 
+                    <h1 className="">Search Artists!</h1>
+                        <input className="artistSearch" type="text" onChange={e => setSearchKey(e.target.value)}/>
+                        <button className=""  type={"submit"} >Search
                         </button>
                     </form>
 
                     : <h2 ></h2>
                 }
-
-               <div className="flex flex-col items-center relative top-10 mt-12">{peps}</div>
+                    </div>
+               <div className="">{peps}</div>
                {token ? <SpotifyGetPlaylists /> : ""}
         
             </header>

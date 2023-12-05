@@ -1,0 +1,63 @@
+.button{
+    font-family: 'Chakra Petch', sans-serif;
+    position: relative;
+    bottom: 80px;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.button:hover{
+    background-color: #4CAF50; /* change the background color */
+    color: white;
+    cursor: pointer;
+}
+
+.saveButton{
+    font-family: 'Chakra Petch', sans-serif;
+    position: relative;
+    bottom: 10px;
+    font-size: 25px;
+    text-decoration: none;
+}
+.saveButton:hover{
+    background-color: #4CAF50; /* change the background color */
+    color: white;
+    cursor: pointer;
+}
+
+.anchor{
+    text-decoration: none;
+    color: black;
+}
+
+.myStatsText{
+    font-family: 'Chakra Petch', sans-serif;
+    position: relative;
+    
+    font-size: 15px;
+    text-decoration: none;
+    
+}
+
+.artistSearch{
+    margin-bottom: 20px;
+}
+
+.logoutLogin{
+    position: relative;
+    left: 425px;
+    font-size: 40px;
+}
+.searchArtistCont{
+    position: relative;
+    left: 425px;
+}
+
+.reulstsCont{
+    position: relative;
+    left: 425px;
+}
+
+.playlistsCont{
+    position: relative;
+}

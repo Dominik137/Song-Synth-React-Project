@@ -1,7 +1,39 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+.container{
+    display: grid;
+    grid-template-rows: auto; /* Automatically adjust the height of the header */
+    grid-template-columns: 300px 1fr 300px; /* Three columns, adjust as needed */
+    gap: 10px; /* Adjust the gap between columns */
+    padding: 20px;
+    margin-left: 60px;
+}
 
+.header {
+    grid-column: 1 / -1; /* Header spans across all columns */
+    padding: 10px;
+    text-align: center;
+    font-size: 56px;
+    font-family: Chakra Petch;
+    font-weight: bold,;
+    font-style: italic;
+  }
 
+    .column {
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+  
+  }
+  
+  .middleColumn {
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+  }
+
+body {
+    background: silver;
+    text-align: center;
+    font-family: Chakra Petch;
+  }
 
 
