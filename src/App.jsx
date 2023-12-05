@@ -7,12 +7,10 @@ import About from './Components/About'
 import MyStats from './Components/MyStats'
 
 function App() {
-  const [count, setCount] = useState(0)
-
-
-  return (
+ 
+ return (
     <>
-    <div className='wrapper'>
+    <div className='bg-gradient-to-b from-gray-300 to-transparent p-10 p-full '>
      <BrowserRouter>
       <Header />
       <Routes>

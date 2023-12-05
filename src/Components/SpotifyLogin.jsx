@@ -1,6 +1,8 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import ArtistCard from './ArtistCard'
+
 
 function SpotifyLogin(){
 
@@ -49,38 +51,45 @@ function SpotifyLogin(){
                 }
             })
     
-            setArtists(data.artists.items)
-        }
+    
         
-
         
-
         
-    return(
-        <div>
-           <header>
-           {!token ?
-            <button>
-                <a href={`${authEndpoint}?client_id=${clientId}&redirect_uri=${redirectURI}&response_type=${respType}`}>Login to Spotify</a>
-            </button>
-            : <button onClick={logout}>Logout</button>}
-
-                {token ?
-                    <form onSubmit={searchArtists}>
-                        <input type="text" onChange={e => setSearchKey(e.target.value)}/>
-                        <button type={"submit"} >Search</button>
-                    </form>
-
-                    : <h2>Please login</h2>
-                }
-
-               {artists.map(artist => (
+                const artistMap =  data.artists.items.map(artist => (
                 <div key={artist.id}>
                     {artist.images.length ? <img width={"100px"} src={artist.images[0].url} alt=""/> : <div>No Image</div>}
                     {artist.name}
-                    
                 </div>
-                ))}
+            ))
+            setPeps(artistMap)
+            setArtists(data.artists.items)
+        }       
+    return(
+        <div className="font-body flex flex-col items-center ">
+           <header className="">
+           {!token ?
+            <button className="font-body text-3xl relative top-12
+            bg-transparent hover:bg-green-600 hover:text-black py-2 px-4 border border-black hover:border-transparent "  >
+                <a
+           href={`${authEndpoint}?client_id=${clientId}&redirect_uri=${redirectURI}&response_type=${respType}`}>Login to Spotify</a>
+            </button>
+            : <button className="font-body text-3xl absolute top-0 right-0
+            bg-transparent hover:bg-green-600 hover:text-black py-2 px-4 border border-black hover:border-transparent "
+            onClick={logout}>Logout</button>}
+
+                {token ?
+                    <form className=" text-center relative top-12 pb-4 " onSubmit={searchArtists}> 
+                    <h1 className="font-body text-3xl ">Search Artists!</h1>
+                        <input className="border border-black bg-white focus:outline-none relative left-10" type="text" onChange={e => setSearchKey(e.target.value)}/>
+                        <button className="font-body text-xs relative top-0 left-12
+            bg-transparent hover:bg-green-600 hover:text-black py-2 px-4 border border-black hover:border-transparent"  type={"submit"} >Search
+                        </button>
+                    </form>
+
+                    : <h2 ></h2>
+                }
+
+               <div className="flex flex-col items-center relative top-10 mt-12"><ArtistCard peps={peps} /></div>
                 
         
             </header>
