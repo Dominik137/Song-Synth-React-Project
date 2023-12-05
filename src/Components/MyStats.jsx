@@ -17,7 +17,7 @@ function MyStats(){
         return(<div>
             <h1 className="myStatsText">{item.name}</h1>
             <p className="myStatsText">Followers: {item.followers.toLocaleString()}</p>
-            {/* <img>{item.image.url}</img> */}
+            {item.image ? <img width={"100px"} src={item.image.url} alt=""/> : <div>No Image</div>}
 
         </div>)
 

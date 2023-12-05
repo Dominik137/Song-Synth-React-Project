@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 
 function PlaylistCard({data}){
-console.log(data.items)
+
     
     return (
        <>
@@ -10,6 +10,9 @@ console.log(data.items)
         {data.items?.map((item)=>{
            return( <>
            <p>{item.name}</p>
+            {/* {console.log(item)} */}
+            {item.images.length ? <img width={"100px"} src={item.images[0].url} alt=""/> : <div>No Image</div>}
+            <a>{item.external_urls.spotify}</a>
            </>)
         })}
        </div>

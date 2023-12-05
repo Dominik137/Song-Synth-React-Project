@@ -49,6 +49,36 @@
       },
       "followers": 822548,
       "id": 8
+    },
+    {
+      "name": "Playboi Carti",
+      "image": {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab6761610000e5eb504ff11d788162fbf8078654",
+        "width": 640
+      },
+      "followers": 9336692,
+      "id": 9
+    },
+    {
+      "name": "Tyler, The Creator",
+      "image": {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab6761610000e5eb8278b782cbb5a3963db88ada",
+        "width": 640
+      },
+      "followers": 13358066,
+      "id": 10
+    },
+    {
+      "name": "DaBaby",
+      "image": {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab6761610000e5eb0da5cd9354d458143258879a",
+        "width": 640
+      },
+      "followers": 11443625,
+      "id": 11
     }
   ]
 }

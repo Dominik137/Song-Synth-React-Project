@@ -56,7 +56,7 @@ function SpotifyLogin(){
                 const artistMap =  data.artists.items.map(artist => (
                 <>
                 <div></div>
-                <div className="reulstsCont" key={artist.id}>
+                <div key={artist.id}>
                     {artist.images.length ? <img width={"100px"} src={artist.images[0].url} alt=""/> : <div>No Image</div>}
                     <h1>{artist.name}</h1>
                     <h2 className="font-body mb-4">Followers: {artist.followers.total.toLocaleString()}</h2>
@@ -83,8 +83,7 @@ function SpotifyLogin(){
         
     return(
         <>
-        <div className="">
-           <header className="">
+          <div className="header">
            <div className="logoutLogin">{!token ?
             <button className="button"  >
                 <a className="anchor"
@@ -93,22 +92,23 @@ function SpotifyLogin(){
             : <button className="button"
             onClick={logout}>Logout</button>}
             </div>
-                <div className="searchArtistCont">
+          </div>
+        <div className='container'>
+                <div>
                 {token ?
                     <form className="" onSubmit={searchArtists}> 
                     <h1 className="">Search Artists!</h1>
                         <input className="artistSearch" type="text" onChange={e => setSearchKey(e.target.value)}/>
-                        <button className=""  type={"submit"} >Search
+                        <button className="searchButton"  type={"submit"} >Search
                         </button>
                     </form>
 
                     : <h2 ></h2>
                 }
                     </div>
-               <div className="">{peps}</div>
+               <div name="Searched">{peps}</div>
                {token ? <SpotifyGetPlaylists /> : ""}
         
-            </header>
         </div>
         </>
     )

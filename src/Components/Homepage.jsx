@@ -5,9 +5,7 @@ function Homepage(){
 
 return (
 <>
-<div>
     <SpotifyLogin />
-</div>
 </>
 )
 }

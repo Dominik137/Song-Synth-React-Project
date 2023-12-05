@@ -28,8 +28,8 @@ const SpotifyGetPlaylists = () => {
     }
     
     return(
-        <div className="playlistsCont">
-        <button onClick={hadleGetPlaylist} className="button">Show your Playlist</button>
+        <div name={"Playlist"}>
+        <button className="showPlaylistButton" onClick={hadleGetPlaylist} >Show your Playlist</button>
         <PlaylistCard data={data}/>
         </div>
     )
