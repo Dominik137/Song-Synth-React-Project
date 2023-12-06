@@ -4,13 +4,16 @@
     bottom: 80px;
     font-size: 30px;
     text-decoration: none;
+    margin-left: 5px;
+    background-color: #F3F3F0;
 }
 .logInButton{
     font-family: 'Chakra Petch', sans-serif;
     position: relative;
-    bottom: 160px;
+    bottom: 60px;
     font-size: 30px;
     text-decoration: none;
+    background-color: #F3F3F0;
 }
 .logInButton:hover{
     background-color: #4CAF50; /* change the background color */
@@ -21,9 +24,10 @@
 .logOutButton{
     font-family: 'Chakra Petch', sans-serif;
     position: relative;
-    bottom: 270px;
+    bottom: 70px;
     font-size: 30px;
     text-decoration: none;
+    background-color: #F3F3F0;
 }
 
 .logOutButton:hover{
@@ -39,8 +43,11 @@
 }
 .searchButton{
     font-family: 'Chakra Petch', sans-serif;
-    font-size:15px;
+    font-size: 33px;
     text-decoration: none;
+    background-color: #F3F3F0;
+    position: relative;
+    bottom: 50px;
 }
 .searchButton:hover{
     background-color: #4CAF50; /* change the background color */
@@ -52,8 +59,11 @@
     font-family: 'Chakra Petch', sans-serif;
     position: relative;
     bottom: 12px;
-    font-size: 15px;
+    font-size: 18px;
+    width: 120px;
     text-decoration: none;
+    background-color: #F3F3F0;
+    font-weight: bold;
 }
 .saveButton:hover{
     background-color: #4CAF50; /* change the background color */
@@ -64,6 +74,8 @@
     font-family: 'Chakra Petch', sans-serif;
     font-size: 28px;
     text-decoration: none;
+    margin-bottom: 5px;
+    background-color: #F3F3F0;
 }
 .showPlaylistButton:hover{
     background-color: #4CAF50; /* change the background color */
@@ -87,6 +99,12 @@
 
 .artistSearch{
     margin-bottom: 20px;
+    width: 200px;
+    height: 42px;
+    position: relative;
+    bottom: 52px;
+    font-size: 25px;
+    margin-right: 5px ;
 }
 
 .logoutLogin{
@@ -104,4 +122,12 @@
 
 .playlistsCont{
     position: relative;
+}
+
+.searchArtisth1{
+    font-size: 70px;
+    position: relative;
+    bottom: 50px;
+    font-style: italic;
+    text-decoration: none;
 }

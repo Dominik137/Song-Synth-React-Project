@@ -99,6 +99,26 @@
       },
       "followers": 9831289,
       "id": 13
+    },
+    {
+      "name": "Olivia Rodrigo",
+      "image": {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab6761610000e5ebe03a98785f3658f0b6461ec4",
+        "width": 640
+      },
+      "followers": 30593436,
+      "id": 14
+    },
+    {
+      "name": "SD",
+      "image": {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab6761610000e5eb54cbae86bbd4368bc2b3a774",
+        "width": 640
+      },
+      "followers": 60532,
+      "id": 15
     }
   ]
 }

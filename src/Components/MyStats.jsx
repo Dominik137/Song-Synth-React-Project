@@ -14,10 +14,10 @@ function MyStats(){
     console.log(savedArtists)
 
     const mapSavedArtists = savedArtists.map((item)=>{
-        return(<div>
+        return(<div className="savedArtistCard">
             <h1 className="myStatsText">{item.name}</h1>
             <p className="myStatsText">Followers: {item.followers.toLocaleString()}</p>
-            {item.image ? <img width={"100px"} src={item.image.url} alt=""/> : <div>No Image</div>}
+            {item.image ? <img width={"85px"} height={"85px"} src={item.image.url} alt=""/> : <div>No Image</div>}
 
         </div>)
 
@@ -28,10 +28,10 @@ function MyStats(){
         <>
         <div className="container">
         <div className="column">
-            <h1 className="">
-                Saved Artists!
-                {mapSavedArtists}
-            </h1>
+            <div>
+              <h1>Saved Artists!</h1>  
+                <div>{mapSavedArtists}</div>
+            </div>
         </div>
         <div className="middleColumn"></div>
         <div className="column"></div>

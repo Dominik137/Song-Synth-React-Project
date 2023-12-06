@@ -85,8 +85,24 @@ function SpotifyLogin(){
         
     return(
         <>
+
+        <div className="header">
+        <div className="">{!token ?
+            <button className="logInButton">
+                <a className="anchor"
+           href={`${authEndpoint}?client_id=${clientId}&redirect_uri=${redirectURI}&response_type=${respType}`}>Login to Spotify</a>
+            </button>
+            : <button className="logOutButton"
+            onClick={logout}>Logout</button>}
+            </div>
+        </div>
+          
+        <div className="container">
+          
+          
           <div className="column">
            
+
           </div>
         
                 
@@ -94,8 +110,8 @@ function SpotifyLogin(){
         <div className="middleColumn">
             {token ?
                 <form className="" onSubmit={searchArtists}> 
-                    <h1 className="">Search Artists!</h1>
-                        <input className="artistSearch" type="text" onChange={e => setSearchKey(e.target.value)}/>
+                    <h1 className="searchArtisth1">Search Artists!</h1>
+                        <input className="artistSearch" placeholder=":)" type="text" onChange={e => setSearchKey(e.target.value)}/>
                             <button className="searchButton"  type={"submit"} >Search
                             </button>
                 </form>
@@ -104,20 +120,11 @@ function SpotifyLogin(){
                  <div className="middleColumn">
                  <div className="">{peps}</div>
                 </div>
-                <div className="">{!token ?
-            <button className="logInButton"  >
-                <a className="anchor"
-           href={`${authEndpoint}?client_id=${clientId}&redirect_uri=${redirectURI}&response_type=${respType}`}>Login to Spotify</a>
-            </button>
-            : <button className="logOutButton"
-            onClick={logout}>Logout</button>}
-            </div>
-
         </div>
         <div className="column">
                {token ? <SpotifyGetPlaylists /> : ""}
         </div>
-       
+        </div>
         </>
     )
 }
