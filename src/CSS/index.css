@@ -4,7 +4,6 @@
     grid-template-columns: 300px 1fr 300px; /* Three columns, adjust as needed */
     gap: 10px; /* Adjust the gap between columns */
     padding: 20px;
-    margin-left: 60px;
 }
 
 .header {

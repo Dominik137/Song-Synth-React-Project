@@ -5,6 +5,32 @@
     font-size: 30px;
     text-decoration: none;
 }
+.logInButton{
+    font-family: 'Chakra Petch', sans-serif;
+    position: relative;
+    bottom: 160px;
+    font-size: 30px;
+    text-decoration: none;
+}
+.logInButton:hover{
+    background-color: #4CAF50; /* change the background color */
+    color: white;
+    cursor: pointer;
+}
+
+.logOutButton{
+    font-family: 'Chakra Petch', sans-serif;
+    position: relative;
+    bottom: 270px;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.logOutButton:hover{
+    background-color: #4CAF50; /* change the background color */
+    color: white;
+    cursor: pointer;
+}
 
 .button:hover{
     background-color: #4CAF50; /* change the background color */
@@ -25,8 +51,8 @@
 .saveButton{
     font-family: 'Chakra Petch', sans-serif;
     position: relative;
-    bottom: 10px;
-    font-size: 25px;
+    bottom: 12px;
+    font-size: 15px;
     text-decoration: none;
 }
 .saveButton:hover{
@@ -36,7 +62,7 @@
 }
 .showPlaylistButton{
     font-family: 'Chakra Petch', sans-serif;
-    font-size: 30px;
+    font-size: 28px;
     text-decoration: none;
 }
 .showPlaylistButton:hover{

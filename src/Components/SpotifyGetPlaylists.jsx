@@ -5,6 +5,7 @@ import PlaylistCard from './PlaylistCard'
 const SpotifyGetPlaylists = () => {
     const [token, setToken] = useState('')
     const [data, setData] = useState([])
+    const [button, setButton] =useState(true)
     const playListEnpoint = 'https://api.spotify.com/v1/me/playlists'
 
     useEffect(()=>{
@@ -26,11 +27,26 @@ const SpotifyGetPlaylists = () => {
             console.log(error)
         })
     }
+
+    function handClickOne(){
+        hadleGetPlaylist()
+        setButton(false)
+    }
+
+    function handleClickTwo(){
+        setButton(true)
+        setData([])
+    }
     
     return(
-        <div name={"Playlist"}>
-        <button className="showPlaylistButton" onClick={hadleGetPlaylist} >Show your Playlist</button>
+        <div className="">
+        <div name={"Playlist"}>   
+        { button ?
+            <button className="showPlaylistButton" onClick={handClickOne}  >Show your Playlists</button> :
+        <button className="showPlaylistButton" onClick={handleClickTwo}>Hide Playlists</button>
+        }
         <PlaylistCard data={data}/>
+        </div>
         </div>
     )
 }

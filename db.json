@@ -79,6 +79,26 @@
       },
       "followers": 11443625,
       "id": 11
+    },
+    {
+      "name": "Drake",
+      "image": {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab6761610000e5eb4293385d324db8558179afd9",
+        "width": 640
+      },
+      "followers": 82948910,
+      "id": 12
+    },
+    {
+      "name": "Mac Miller",
+      "image": {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab6761610000e5ebed3b89aa602145fde71a163a",
+        "width": 640
+      },
+      "followers": 9831289,
+      "id": 13
     }
   ]
 }

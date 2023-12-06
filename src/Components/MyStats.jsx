@@ -25,12 +25,19 @@ function MyStats(){
 
 
     return(
+        <>
+        <div className="container">
         <div className="column">
             <h1 className="">
                 Saved Artists!
                 {mapSavedArtists}
             </h1>
         </div>
+        <div className="middleColumn"></div>
+        <div className="column"></div>
+       </div>
+{/* make mulyiple columns */}
+        </>
     )
 }
 

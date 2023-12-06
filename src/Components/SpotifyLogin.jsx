@@ -55,11 +55,12 @@ function SpotifyLogin(){
             
                 const artistMap =  data.artists.items.map(artist => (
                 <>
-                <div></div>
-                <div key={artist.id}>
+                <div >
+                    {/* add On click to this top div for more info! */}
+                <div className="card" key={artist.id}>
                     {artist.images.length ? <img width={"100px"} src={artist.images[0].url} alt=""/> : <div>No Image</div>}
                     <h1>{artist.name}</h1>
-                    <h2 className="font-body mb-4">Followers: {artist.followers.total.toLocaleString()}</h2>
+                    <h2 className="">Followers: {artist.followers.total.toLocaleString()}</h2>
                     {console.log(artist)}
                     <button onClick={()=>{
                         fetch('http://localhost:3000/savedArtists',{
@@ -75,6 +76,7 @@ function SpotifyLogin(){
                              
                         }} className="saveButton">Save</button>
                 </div>
+                </div>
                 </>
             ))
             setPeps(artistMap)
@@ -83,33 +85,39 @@ function SpotifyLogin(){
         
     return(
         <>
-          <div className="header">
-           <div className="logoutLogin">{!token ?
-            <button className="button"  >
+          <div className="column">
+           
+          </div>
+        
+                
+                
+        <div className="middleColumn">
+            {token ?
+                <form className="" onSubmit={searchArtists}> 
+                    <h1 className="">Search Artists!</h1>
+                        <input className="artistSearch" type="text" onChange={e => setSearchKey(e.target.value)}/>
+                            <button className="searchButton"  type={"submit"} >Search
+                            </button>
+                </form>
+                        : <h2 ></h2>
+                }
+                 <div className="middleColumn">
+                 <div className="">{peps}</div>
+                </div>
+                <div className="">{!token ?
+            <button className="logInButton"  >
                 <a className="anchor"
            href={`${authEndpoint}?client_id=${clientId}&redirect_uri=${redirectURI}&response_type=${respType}`}>Login to Spotify</a>
             </button>
-            : <button className="button"
+            : <button className="logOutButton"
             onClick={logout}>Logout</button>}
             </div>
-          </div>
-        <div className='container'>
-                <div>
-                {token ?
-                    <form className="" onSubmit={searchArtists}> 
-                    <h1 className="">Search Artists!</h1>
-                        <input className="artistSearch" type="text" onChange={e => setSearchKey(e.target.value)}/>
-                        <button className="searchButton"  type={"submit"} >Search
-                        </button>
-                    </form>
 
-                    : <h2 ></h2>
-                }
-                    </div>
-               <div name="Searched">{peps}</div>
-               {token ? <SpotifyGetPlaylists /> : ""}
-        
         </div>
+        <div className="column">
+               {token ? <SpotifyGetPlaylists /> : ""}
+        </div>
+       
         </>
     )
 }

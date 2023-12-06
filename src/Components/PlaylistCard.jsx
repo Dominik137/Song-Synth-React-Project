@@ -8,11 +8,12 @@ function PlaylistCard({data}){
        <>
        <div>
         {data.items?.map((item)=>{
-           return( <>
-           <p>{item.name}</p>
-            {/* {console.log(item)} */}
+           return(
+             <>
+           <div onClick={()=>{window.open(`${item.external_urls.spotify}`)}} className="playlistCard">
+           <p className="text-title">{item.name}</p>
             {item.images.length ? <img width={"100px"} src={item.images[0].url} alt=""/> : <div>No Image</div>}
-            <a>{item.external_urls.spotify}</a>
+          </div>
            </>)
         })}
        </div>

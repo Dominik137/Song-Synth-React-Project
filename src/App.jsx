@@ -5,6 +5,7 @@ import Header from './Components/Header'
 import Homepage from './Components/Homepage'
 import About from './Components/About'
 import MyStats from './Components/MyStats'
+import "./CSS/Cards.Css"
 
 function App() {
  
