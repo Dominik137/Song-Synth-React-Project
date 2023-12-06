@@ -1,124 +1,44 @@
 {
   "savedArtists": [
     {
-      "name": "André 3000",
-      "image": {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab6761610000e5eb1984263efe557e8116f0780a",
-        "width": 640
-      },
-      "followers": 458743,
-      "id": 4
-    },
-    {
-      "name": "A$AP Rocky",
-      "image": {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab6761610000e5eb5c58c41a506a0d6b32cc6cad",
-        "width": 640
-      },
-      "followers": 13186436,
-      "id": 5
-    },
-    {
-      "name": "Dominic Fike",
-      "image": {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab6761610000e5ebbe491d3676793a1697c61254",
-        "width": 640
-      },
-      "followers": 1431608,
-      "id": 6
-    },
-    {
-      "name": "Doja Cat",
-      "image": {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab6761610000e5eb7f6d6cac38d494e87692af99",
-        "width": 640
-      },
-      "followers": 27573677,
-      "id": 7
-    },
-    {
-      "name": "Danny Brown",
-      "image": {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab6761610000e5eb196db1757e46efbecd7314c6",
-        "width": 640
-      },
-      "followers": 822548,
-      "id": 8
-    },
-    {
-      "name": "Playboi Carti",
-      "image": {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab6761610000e5eb504ff11d788162fbf8078654",
-        "width": 640
-      },
-      "followers": 9336692,
-      "id": 9
-    },
-    {
-      "name": "Tyler, The Creator",
-      "image": {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab6761610000e5eb8278b782cbb5a3963db88ada",
-        "width": 640
-      },
-      "followers": 13358066,
-      "id": 10
-    },
-    {
-      "name": "DaBaby",
-      "image": {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab6761610000e5eb0da5cd9354d458143258879a",
-        "width": 640
-      },
-      "followers": 11443625,
-      "id": 11
-    },
-    {
-      "name": "Drake",
-      "image": {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab6761610000e5eb4293385d324db8558179afd9",
-        "width": 640
-      },
-      "followers": 82948910,
-      "id": 12
-    },
-    {
       "name": "Mac Miller",
       "image": {
         "height": 640,
         "url": "https://i.scdn.co/image/ab6761610000e5ebed3b89aa602145fde71a163a",
         "width": 640
       },
-      "followers": 9831289,
-      "id": 13
+      "followers": 9836894,
+      "id": 1
     },
     {
-      "name": "Olivia Rodrigo",
+      "name": "Cults",
       "image": {
         "height": 640,
-        "url": "https://i.scdn.co/image/ab6761610000e5ebe03a98785f3658f0b6461ec4",
+        "url": "https://i.scdn.co/image/ab6761610000e5ebdc48abf40c40172713ed60cf",
         "width": 640
       },
-      "followers": 30593436,
-      "id": 14
+      "followers": 802741,
+      "id": 2
     },
     {
-      "name": "SD",
+      "name": "Aminé",
       "image": {
         "height": 640,
-        "url": "https://i.scdn.co/image/ab6761610000e5eb54cbae86bbd4368bc2b3a774",
+        "url": "https://i.scdn.co/image/ab6761610000e5eb1f98760ed5b47b21eaf56e8f",
         "width": 640
       },
-      "followers": 60532,
-      "id": 15
+      "followers": 1909996,
+      "id": 3
+    },
+    {
+      "name": "Mac DeMarco",
+      "image": {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab6761610000e5eb3cef7752073cbbd2cc04c6f0",
+        "width": 640
+      },
+      "followers": 4945937,
+      "id": 4
     }
   ]
 }

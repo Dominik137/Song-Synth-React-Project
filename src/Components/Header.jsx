@@ -8,7 +8,7 @@ function Header(){
     return (
         <>
         <div className="header">
-          <h1 onClick={() => { navigate('/') }} className="">SongSynth</h1>
+          <h1 onClick={() => { navigate('/') }} className="">SongSynth💽</h1>
           <div className="space-x-4">
             <button onClick={() => { navigate('/') }} className="button">Home</button>
             <button onClick={() => { navigate('/about') }} className="button">About</button>

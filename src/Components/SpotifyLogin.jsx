@@ -55,9 +55,17 @@ function SpotifyLogin(){
             
                 const artistMap =  data.artists.items.map(artist => (
                 <>
-                <div >
-                    {/* add On click to this top div for more info! */}
-                <div className="card" key={artist.id}>
+                <div>
+                <div 
+                onClick={()=>{
+                    console.log(artist)
+                    return(
+                    <div className="">
+                    <h2>testetst{artist.genres}</h2>
+                    </div>
+                    )
+                }}
+                className="card" key={artist.id}>
                     {artist.images.length ? <img width={"100px"} src={artist.images[0].url} alt=""/> : <div>No Image</div>}
                     <h1>{artist.name}</h1>
                     <h2 className="">Followers: {artist.followers.total.toLocaleString()}</h2>
