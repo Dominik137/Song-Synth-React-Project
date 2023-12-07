@@ -37,4 +37,15 @@ body {
     font-family: Chakra Petch;
   }
 
+  .artist-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+    gap: 20px; /* Add some space between grid items */
+  }
+
+  /* Style for grid items (optional) */
+  .artist-grid-item {
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
 

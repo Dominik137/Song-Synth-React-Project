@@ -38,12 +38,12 @@ const ArtistAlbumCards = ({id}) => {
             return(
               <>
               
-              <div className="playlistCard">
+              <div className="albulmCard">
             <div className="albulmbabyDiv" >
             <p className="album-text-title">{item.name}</p>
-             <div>{item.images.length ? <img className="artistImage"
+             <div>{item.images.length ? <img className="albulmImage"
              onClick={()=>{window.open(`${item.external_urls.spotify}`)}}
-              width={"75px"} height={"75px"} src={item.images[0].url} alt=""/> : <div>No Image</div>}</div>
+              width={"110px"} height={"110px"} src={item.images[0].url} alt=""/> : <div>No Image</div>}</div>
              <button onClick={()=>{
             fetch('http://localhost:3000/savedAlbulms',{
                 method:"POST",

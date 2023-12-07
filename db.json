@@ -69,46 +69,9 @@
       },
       "followers": 22159115,
       "id": 7
-    },
-    {
-      "name": "Drake",
-      "image": {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab6761610000e5eb4293385d324db8558179afd9",
-        "width": 640
-      },
-      "followers": 83047557,
-      "id": 8
     }
   ],
   "savedAlbulms": [
-    {
-      "name": "blah blah",
-      "image": {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab6761610000e5ebadd503b411a712e277895c8a",
-        "width": 640
-      },
-      "id": 7
-    },
-    {
-      "name": "For All The Dogs Scary Hours Edition",
-      "image": {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b273e286ee36b4015afa8832356a",
-        "width": 640
-      },
-      "id": 8
-    },
-    {
-      "name": "For All The Dogs",
-      "image": {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b2737d384516b23347e92a587ed1",
-        "width": 640
-      },
-      "id": 9
-    },
     {
       "name": "SOS",
       "image": {
@@ -117,6 +80,33 @@
         "width": 640
       },
       "id": 10
+    },
+    {
+      "name": "This Old Dog",
+      "image": {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab67616d0000b273d18fa8f63707115cb1b38f65",
+        "width": 640
+      },
+      "id": 11
+    },
+    {
+      "name": "Pure Heroine",
+      "image": {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab67616d0000b273187331e276c898d39764cc98",
+        "width": 640
+      },
+      "id": 12
+    },
+    {
+      "name": "The Divine Feminine",
+      "image": {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab67616d0000b2732e92f776279eaf45d14a33fd",
+        "width": 640
+      },
+      "id": 13
     }
   ]
 }

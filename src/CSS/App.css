@@ -72,10 +72,12 @@
 }
 .saveAlbButton{
     font-family: 'Chakra Petch', sans-serif;
-    position: relative;
-    top: 8px;
     font-size: 12px;
-    width: 120px;
+    width: 100px;
+    height: 80px;
+    position: relative;
+    left: 165px;
+    bottom: 130px;
     text-decoration: none;
     background-color: #F3F3F0;
     font-weight: bold;
@@ -153,7 +155,9 @@
 .album-text-title{
     padding: 0px;
     position: relative;
-    bottom: 10px;
+    bottom: 19px;
+    right: 5px;
+    font-size: 13px;
     
 }
 

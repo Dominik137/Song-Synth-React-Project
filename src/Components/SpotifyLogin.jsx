@@ -62,8 +62,7 @@ function SpotifyLogin(){
     }   
     const artistMap =  artists.map(artist => (
     <>
-    <div>
-        
+    <div className="artist-grid-container">
     <div 
     onClick={()=>{   
             {id ? setId("") : setId(artist.id)}
@@ -129,9 +128,9 @@ function SpotifyLogin(){
                 }
                 
                  <div className="middleColumn">
-                 <div className="">{artistMap}</div>
+                 <div name="father">{artistMap}</div>
                 </div>
-                <div></div>
+                <div name="blah"></div>
 
 
 

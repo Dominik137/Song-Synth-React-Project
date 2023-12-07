@@ -196,3 +196,68 @@
     box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
     cursor: pointer;
    }
+
+.albulmImage{
+    border: 2px solid #F3F3F0;
+    position: relative;
+    bottom: 22px;
+
+}
+.albulmImage:hover{
+    border-color: #4CAF50;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+   }
+
+
+/* Albulm card */
+   .albulmCard {
+    width: 467px;
+    height: 100px;
+    padding: 1.8rem;
+    border: 3px solid #F3F3F0;
+    margin-bottom: 5px;
+    transition: 0.5s ease-out;
+    overflow: visible;
+    position: relative;
+    background-color: #F3F3F0;
+   }
+   
+   .albulmCard-details {
+    color: black;
+    height: 100%;
+    gap: .5em;
+    display: grid;
+    place-content: center;
+   }
+   
+   .albulmCard-button {
+    transform: translate(-50%, 125%);
+    width: 60%;
+    border-radius: 1rem;
+    border: none;
+    background-color: #008bf8;
+    color: #fff;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+   }
+   
+   .text-body {
+    font-size: 10px;
+    color: black;
+   }
+   
+   /*Text*/
+   .text-title {
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    bottom: 15px;
+   }
+   
+   
