@@ -74,7 +74,8 @@ function SpotifyLogin(){
          width={"100px"} height={"100px"} src={artist.images[0].url} alt=""/> : <div>No Image</div>}
         <h1>{artist.name}</h1>
         <h2 className="">Followers: {artist.followers.total.toLocaleString()}</h2>
-        <button onClick={()=>{
+        <button onClick={(e)=>{
+            e.stopPropagation()
             fetch('http://localhost:3000/savedArtists',{
                 method:"POST",
                  headers:{ 'Content-Type': 'application/json'
@@ -82,7 +83,8 @@ function SpotifyLogin(){
                 body: JSON.stringify({
                     "name": artist.name,
                     "image": artist.images[0],
-                    "followers": artist.followers.total
+                    "followers": artist.followers.total,
+                    "artistLink": artist['external_urls'].spotify
                 })
                  })
                  

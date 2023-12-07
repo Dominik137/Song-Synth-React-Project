@@ -7,7 +7,8 @@
         "url": "https://i.scdn.co/image/ab6761610000e5ebed3b89aa602145fde71a163a",
         "width": 640
       },
-      "followers": 9836894,
+      "followers": 9842339,
+      "artistLink": "https://open.spotify.com/artist/4LLpKhyESsyAXpc4laK94U",
       "id": 1
     },
     {
@@ -17,58 +18,9 @@
         "url": "https://i.scdn.co/image/ab6761610000e5ebdc48abf40c40172713ed60cf",
         "width": 640
       },
-      "followers": 802741,
+      "followers": 803385,
+      "artistLink": "https://open.spotify.com/artist/3Oim8XBPbznAa8Jj8QzNc8",
       "id": 2
-    },
-    {
-      "name": "Aminé",
-      "image": {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab6761610000e5eb1f98760ed5b47b21eaf56e8f",
-        "width": 640
-      },
-      "followers": 1909996,
-      "id": 3
-    },
-    {
-      "name": "Mac DeMarco",
-      "image": {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab6761610000e5eb3cef7752073cbbd2cc04c6f0",
-        "width": 640
-      },
-      "followers": 4945937,
-      "id": 4
-    },
-    {
-      "name": "redveil",
-      "image": {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab6761610000e5eb02b582dbde5e556923b9e9cb",
-        "width": 640
-      },
-      "followers": 218552,
-      "id": 5
-    },
-    {
-      "name": "Drake",
-      "image": {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab6761610000e5eb4293385d324db8558179afd9",
-        "width": 640
-      },
-      "followers": 82997736,
-      "id": 6
-    },
-    {
-      "name": "J. Cole",
-      "image": {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab6761610000e5ebadd503b411a712e277895c8a",
-        "width": 640
-      },
-      "followers": 22159115,
-      "id": 7
     }
   ],
   "savedAlbulms": [
@@ -80,18 +32,44 @@
         "width": 640
       },
       "totalTracks": 25,
-      "releaseDate": "2022-11-04",
+      "releaseDate": "2021-10-15",
+      "albumLink": "https://open.spotify.com/album/5SKnXCvB4fcGSZu32o3LRY",
       "id": 1
     },
     {
-      "name": "IDEAS, MAN",
+      "name": "Cults",
       "image": {
         "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b273aabeb1a689504a906aa164ae",
+        "url": "https://i.scdn.co/image/ab67616d0000b2734f4119f2a4b0dab40391ac24",
         "width": 640
       },
-      "totalTracks": 21,
-      "releaseDate": "2023-06-30",
+      "totalTracks": 13,
+      "releaseDate": "2011-06-07",
+      "albumLink": "https://open.spotify.com/album/5EogSa1pT202kPV4P30YJu",
+      "id": 2
+    }
+  ],
+  "savedSongs": [
+    {
+      "name": "We (feat. CeeLo Green)",
+      "image": {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab67616d0000b2732e92f776279eaf45d14a33fd",
+        "width": 640
+      },
+      "trackNumber": 8,
+      "songLink": "https://open.spotify.com/track/4k5UZm89ZX0YAHUp55zpt9",
+      "id": 1
+    },
+    {
+      "name": "Bumper",
+      "image": {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab67616d0000b2734f4119f2a4b0dab40391ac24",
+        "width": 640
+      },
+      "trackNumber": 10,
+      "songLink": "https://open.spotify.com/track/6FkIuSdcyAqLHd12Cz95DZ",
       "id": 2
     }
   ]

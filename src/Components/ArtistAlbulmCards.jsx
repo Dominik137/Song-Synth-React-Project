@@ -1,10 +1,13 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import SongCard from './SongCard'
 
 const ArtistAlbumCards = ({id}) => {
     const [token, setToken] = useState('');
     const [data, setData] = useState([]);
+    const [albumId, setAlbumId] = useState("")
+    const [albulmCover ,setAlbulmCover] = useState("")
     const albulmListEnpoint = `https://api.spotify.com/v1/artists/${id}/albums`
   
     useEffect(() => {
@@ -19,26 +22,26 @@ const ArtistAlbumCards = ({id}) => {
               Authorization: "Bearer " + token,
             },
           });
-  
+          
           setData(response.data);
         } catch (error) {
           console.log(error);
         }
       };
-  
+  console.log(data)
       handleGetAlbulms(); // This will run only once when the component mounts
   
     }, [albulmListEnpoint, token, id]); 
-
-    console.log(data)
     return (
         <>
         <div>
          {data.items?.map((item)=>{
+            
             return(
               <>
-              
-              <div className="albulmCard">
+              <div onClick={()=>{setAlbulmCover(item.images[0])}}>
+              <div  onClick={() => {albumId ? setAlbumId("") : setAlbumId(item.id)} }
+               className="albulmCard"> 
             <div className="albulmbabyDiv" >
             <p className="album-text-title">{item.name}</p>
             <div>
@@ -49,7 +52,8 @@ const ArtistAlbumCards = ({id}) => {
              onClick={()=>{window.open(`${item.external_urls.spotify}`)}}
               width={"110px"} height={"110px"} src={item.images[0].url} alt=""/> : <div>No Image</div>}</div>
               
-             <button onClick={()=>{
+             <button onClick={(e)=>{
+                e.stopPropagation()
             fetch('http://localhost:3000/savedAlbulms',{
                 method:"POST",
                  headers:{ 'Content-Type': 'application/json'
@@ -58,13 +62,17 @@ const ArtistAlbumCards = ({id}) => {
                     "name": item.name,
                     "image": item.images[0],
                     "totalTracks": item.total_tracks,
-                    "releaseDate": item.release_date
+                    "releaseDate": item.release_date,
+                    "albumLink": item['external_urls'].spotify
                 })
                  })
                  
             }} className="saveAlbButton">Save</button>
+           </div> 
            </div>
+           
            </div>
+           {albumId === item.id  ? < SongCard albulmCover={albulmCover} albumId={albumId}/> : <></>} 
             </>)
          })}
         </div>

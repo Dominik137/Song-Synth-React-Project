@@ -205,3 +205,43 @@
     position: relative;
     bottom: 48px;
 }
+.songNames {
+    font-family: 'Chakra Petch', sans-serif;
+    position: relative;
+    background-color: #F3F3F0;
+    /* Add some padding to create space between texts */
+    transition: color 0.3s; /* Add a smooth transition for color change */
+    font-size: 25px;
+    height: 15px;
+    bottom: 20px;
+}
+
+.songNames:hover {
+    color: #4CAF50; /* Change font color to green on hover */
+    cursor: pointer;
+}
+
+.songsTitle{
+font-size: 30px;
+padding: 0px;
+height: 20px;
+position: relative;
+bottom: 28px;
+}
+
+.saveSongButton{
+    font-family: 'Chakra Petch', sans-serif;
+    position: relative;
+    left: 230px;
+    bottom: 50px;
+    font-size: 18px;
+    width: auto;
+    text-decoration: none;
+    background-color: #F3F3F0;
+    font-weight: bold;
+}
+.saveSongButton:hover{
+    background-color: #4CAF50; /* change the background color */
+    color: white;
+    cursor: pointer;
+}

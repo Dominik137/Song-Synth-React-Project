@@ -7,7 +7,7 @@ function About(){
     return(
         <div className="container">
             <div className="column">
-            
+            <img src="https://www.reactiongifs.com/wp-content/uploads/2013/06/smooth-russian-kid.gif" />
             </div>
             <div className="middleColumn"> 
             <h1 className="">Welcome to SongSynth! At SongSynth we wanted to give users the 
