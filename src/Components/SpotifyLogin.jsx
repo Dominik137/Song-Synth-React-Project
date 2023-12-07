@@ -2,6 +2,8 @@ import React from "react";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import SpotifyGetPlaylists from './SpotifyGetPlaylists'
+import SpotifyUser from "./SpotifyUser";
+import ArtistAlbumCards from "./ArtistAlbulmCards"
 
 
 function SpotifyLogin(){
@@ -14,12 +16,14 @@ function SpotifyLogin(){
     const [token, setToken] = useState("")
     const [searchKey, setSearchKey] = useState("")
     const [artists, setArtists] = useState([])
-   const [peps, setPeps] = useState("")
+    const [peps, setPeps] = useState("")
+    const [id, setId] = useState('')
+    
+
 
     useEffect(()=>{
         const hash = window.location.hash
         let token = window.localStorage.getItem("token")
-
         if (!token && hash) {
             token = hash.substring(1).split("&").find(elm => elm.startsWith('access_token')).split('=')[1]
         
@@ -32,65 +36,63 @@ function SpotifyLogin(){
         //what route you go to
     },[])
        
+    const logout = () => {
+        setToken('')
+        window.localStorage.removeItem("token")
+        setPeps([])
+    }
     
-        const logout = () => {
-            setToken('')
-            window.localStorage.removeItem("token")
-            setPeps([])
-        }
-
-        const searchArtists = async (e) => {
-            e.preventDefault()
-            const {data} = await axios.get("https://api.spotify.com/v1/search", {
-                headers: {
-                    Authorization: `Bearer ${token}`
-                },
-                params: {
-                    q: searchKey,
-                    type: "artist"
-                }
-            })
+    const searchArtists = async (e) => {
+        e.preventDefault()
+        const {data} = await axios.get("https://api.spotify.com/v1/search", {
+            headers: {
+                Authorization: `Bearer ${token}`
+            },
+            params: {
+                q: searchKey,
+                type: "artist"
+            },
             
-         
-            
-                const artistMap =  data.artists.items.map(artist => (
-                <>
-                <div>
-                <div 
-                onClick={()=>{
-                    console.log(artist)
-                    return(
-                    <div className="">
-                    <h2>testetst{artist.genres}</h2>
-                    </div>
-                    )
-                }}
-                className="card" key={artist.id}>
-                    {artist.images.length ? <img width={"100px"} src={artist.images[0].url} alt=""/> : <div>No Image</div>}
-                    <h1>{artist.name}</h1>
-                    <h2 className="">Followers: {artist.followers.total.toLocaleString()}</h2>
-                    {console.log(artist)}
-                    <button onClick={()=>{
-                        fetch('http://localhost:3000/savedArtists',{
-                            method:"POST",
-                             headers:{ 'Content-Type': 'application/json'
-                             },
-                            body: JSON.stringify({
-                                "name": artist.name,
-                                "image": artist.images[0],
-                                "followers": artist.followers.total
-                            })
-                             })
-                             
-                        }} className="saveButton">Save</button>
-                </div>
-                </div>
-                </>
-            ))
-            setPeps(artistMap)
-            setArtists(data.artists.items)
-        }   
+        })
         
+       
+            
+        // setPeps(artistMap)
+        setArtists(data.artists.items)
+    }   
+    const artistMap =  artists.map(artist => (
+    <>
+    <div>
+        
+    <div 
+    onClick={()=>{   
+            {id ? setId("") : setId(artist.id)}
+           
+    }}
+    className="card" key={artist.id}>
+        {artist.images.length ? <img className="artistImage"
+        onClick={()=>{window.open(`${artist.external_urls.spotify}`)}}
+         width={"100px"} src={artist.images[0].url} alt=""/> : <div>No Image</div>}
+        <h1>{artist.name}</h1>
+        <h2 className="">Followers: {artist.followers.total.toLocaleString()}</h2>
+        <button onClick={()=>{
+            fetch('http://localhost:3000/savedArtists',{
+                method:"POST",
+                 headers:{ 'Content-Type': 'application/json'
+                 },
+                body: JSON.stringify({
+                    "name": artist.name,
+                    "image": artist.images[0],
+                    "followers": artist.followers.total
+                })
+                 })
+                 
+            }} className="saveButton">Save</button>
+    </div>
+    {id === artist.id  ? <ArtistAlbumCards id={id}/> : <></>}
+    </div>
+    </>
+))
     return(
         <>
 
@@ -109,7 +111,7 @@ function SpotifyLogin(){
           
           
           <div className="column">
-           
+            {token ? <SpotifyUser /> : ""}
 
           </div>
         
@@ -125,9 +127,14 @@ function SpotifyLogin(){
                 </form>
                         : <h2 ></h2>
                 }
+                
                  <div className="middleColumn">
-                 <div className="">{peps}</div>
+                 <div className="">{artistMap}</div>
                 </div>
+                <div></div>
+
+
+
         </div>
         <div className="column">
                {token ? <SpotifyGetPlaylists /> : ""}

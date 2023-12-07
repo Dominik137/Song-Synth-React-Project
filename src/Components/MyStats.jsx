@@ -4,6 +4,7 @@ import React, { useState } from "react";
 function MyStats(){
 
     const [savedArtists, setSavedArtists] = useState([])
+    const [savedAlbulms, setSavedAlbulms] = useState([])
 
 
     useState(()=>{
@@ -23,6 +24,24 @@ function MyStats(){
 
     })
 
+    useState(()=>{
+        fetch('http://localhost:3000/savedAlbulms')
+        .then((resp)=>resp.json())
+        .then((data)=>setSavedAlbulms(data))
+    },[])
+    console.log(savedAlbulms)
+
+    const mapSavedAlbulms = savedAlbulms.map((item)=>{
+        return(<div className="savedArtistCard">
+            <h1 className="myStatsText">{item.name}</h1>
+            {item.image ? <img width={"85px"} height={"85px"} src={item.image.url} alt=""/> : <div>No Image</div>}
+
+        </div>)
+
+    })
+
+    
+
 
     return(
         <>
@@ -34,7 +53,10 @@ function MyStats(){
             </div>
         </div>
         <div className="middleColumn"></div>
-        <div className="column"></div>
+        <div className="column">
+            <h1>Saved Albums!</h1>
+                <div>{mapSavedAlbulms}</div>
+        </div>
        </div>
 {/* make mulyiple columns */}
         </>

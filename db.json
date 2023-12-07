@@ -39,6 +39,84 @@
       },
       "followers": 4945937,
       "id": 4
+    },
+    {
+      "name": "redveil",
+      "image": {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab6761610000e5eb02b582dbde5e556923b9e9cb",
+        "width": 640
+      },
+      "followers": 218552,
+      "id": 5
+    },
+    {
+      "name": "Drake",
+      "image": {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab6761610000e5eb4293385d324db8558179afd9",
+        "width": 640
+      },
+      "followers": 82997736,
+      "id": 6
+    },
+    {
+      "name": "J. Cole",
+      "image": {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab6761610000e5ebadd503b411a712e277895c8a",
+        "width": 640
+      },
+      "followers": 22159115,
+      "id": 7
+    },
+    {
+      "name": "Drake",
+      "image": {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab6761610000e5eb4293385d324db8558179afd9",
+        "width": 640
+      },
+      "followers": 83047557,
+      "id": 8
+    }
+  ],
+  "savedAlbulms": [
+    {
+      "name": "blah blah",
+      "image": {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab6761610000e5ebadd503b411a712e277895c8a",
+        "width": 640
+      },
+      "id": 7
+    },
+    {
+      "name": "For All The Dogs Scary Hours Edition",
+      "image": {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab67616d0000b273e286ee36b4015afa8832356a",
+        "width": 640
+      },
+      "id": 8
+    },
+    {
+      "name": "For All The Dogs",
+      "image": {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab67616d0000b2737d384516b23347e92a587ed1",
+        "width": 640
+      },
+      "id": 9
+    },
+    {
+      "name": "SOS",
+      "image": {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab67616d0000b27370dbc9f47669d120ad874ec1",
+        "width": 640
+      },
+      "id": 10
     }
   ]
 }

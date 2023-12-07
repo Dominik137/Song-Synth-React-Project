@@ -70,6 +70,25 @@
     color: white;
     cursor: pointer;
 }
+.saveAlbButton{
+    font-family: 'Chakra Petch', sans-serif;
+    position: relative;
+    top: 8px;
+    font-size: 12px;
+    width: 120px;
+    text-decoration: none;
+    background-color: #F3F3F0;
+    font-weight: bold;
+
+}
+
+.saveAlbButton:hover{
+    background-color: #4CAF50; /* change the background color */
+    color: white;
+    cursor: pointer;
+}
+
+
 .showPlaylistButton{
     font-family: 'Chakra Petch', sans-serif;
     font-size: 28px;
@@ -129,4 +148,17 @@
     position: relative;
     bottom: 50px;
     text-decoration: none;
+}
+
+.album-text-title{
+    padding: 0px;
+    position: relative;
+    bottom: 10px;
+    
+}
+
+.albulmbabyDiv{
+    padding: 0px;
+    position: relative;
+    bottom: 13px;
 }
