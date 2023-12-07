@@ -33,9 +33,10 @@ function MyStats(){
 
     const mapSavedAlbulms = savedAlbulms.map((item)=>{
         return(<div className="savedArtistCard">
-            <h1 className="myStatsText">{item.name}</h1>
+            <h1 className="saveAlbulmName">{item.name}</h1>
             {item.image ? <img width={"85px"} height={"85px"} src={item.image.url} alt=""/> : <div>No Image</div>}
-
+            <p className="savedTotalTracks">Total Tracks: {item.totalTracks}</p>
+            <p className="savedReleaseDate">Release Date: {item.releaseDate} </p>
         </div>)
 
     })
@@ -55,7 +56,7 @@ function MyStats(){
         <div className="middleColumn"></div>
         <div className="column">
             <h1>Saved Albums!</h1>
-                <div>{mapSavedAlbulms}</div>
+                <div >{mapSavedAlbulms}</div>
         </div>
        </div>
 {/* make mulyiple columns */}

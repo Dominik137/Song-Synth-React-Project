@@ -71,7 +71,7 @@ function SpotifyLogin(){
     className="card" key={artist.id}>
         {artist.images.length ? <img className="artistImage"
         onClick={()=>{window.open(`${artist.external_urls.spotify}`)}}
-         width={"100px"} src={artist.images[0].url} alt=""/> : <div>No Image</div>}
+         width={"100px"} height={"100px"} src={artist.images[0].url} alt=""/> : <div>No Image</div>}
         <h1>{artist.name}</h1>
         <h2 className="">Followers: {artist.followers.total.toLocaleString()}</h2>
         <button onClick={()=>{

@@ -30,7 +30,7 @@ const ArtistAlbumCards = ({id}) => {
   
     }, [albulmListEnpoint, token, id]); 
 
-    
+    console.log(data)
     return (
         <>
         <div>
@@ -41,9 +41,14 @@ const ArtistAlbumCards = ({id}) => {
               <div className="albulmCard">
             <div className="albulmbabyDiv" >
             <p className="album-text-title">{item.name}</p>
+            <div>
+            <p className="albulm-track-total">Total Tracks: {item.total_tracks}</p>
+            <p className="albulm-track-release">Release Date: <br/>
+            {item.release_date}</p></div>
              <div>{item.images.length ? <img className="albulmImage"
              onClick={()=>{window.open(`${item.external_urls.spotify}`)}}
               width={"110px"} height={"110px"} src={item.images[0].url} alt=""/> : <div>No Image</div>}</div>
+              
              <button onClick={()=>{
             fetch('http://localhost:3000/savedAlbulms',{
                 method:"POST",
@@ -52,6 +57,8 @@ const ArtistAlbumCards = ({id}) => {
                 body: JSON.stringify({
                     "name": item.name,
                     "image": item.images[0],
+                    "totalTracks": item.total_tracks,
+                    "releaseDate": item.release_date
                 })
                  })
                  

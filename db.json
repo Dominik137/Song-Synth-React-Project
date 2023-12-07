@@ -73,40 +73,26 @@
   ],
   "savedAlbulms": [
     {
-      "name": "SOS",
+      "name": "Faces",
       "image": {
         "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b27370dbc9f47669d120ad874ec1",
+        "url": "https://i.scdn.co/image/ab67616d0000b273e4251cf5331ad74eaaeca36e",
         "width": 640
       },
-      "id": 10
+      "totalTracks": 25,
+      "releaseDate": "2022-11-04",
+      "id": 1
     },
     {
-      "name": "This Old Dog",
+      "name": "IDEAS, MAN",
       "image": {
         "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b273d18fa8f63707115cb1b38f65",
+        "url": "https://i.scdn.co/image/ab67616d0000b273aabeb1a689504a906aa164ae",
         "width": 640
       },
-      "id": 11
-    },
-    {
-      "name": "Pure Heroine",
-      "image": {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b273187331e276c898d39764cc98",
-        "width": 640
-      },
-      "id": 12
-    },
-    {
-      "name": "The Divine Feminine",
-      "image": {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b2732e92f776279eaf45d14a33fd",
-        "width": 640
-      },
-      "id": 13
+      "totalTracks": 21,
+      "releaseDate": "2023-06-30",
+      "id": 2
     }
   ]
 }

@@ -77,7 +77,7 @@
     height: 80px;
     position: relative;
     left: 165px;
-    bottom: 130px;
+    bottom: 190px;
     text-decoration: none;
     background-color: #F3F3F0;
     font-weight: bold;
@@ -114,6 +114,14 @@
     position: relative;
     
     font-size: 15px;
+    text-decoration: none;
+    
+}
+.saveAlbulmName{
+    font-family: 'Chakra Petch', sans-serif;
+    position: relative;
+    bottom: 25px;
+    font-size: 20px;
     text-decoration: none;
     
 }
@@ -165,4 +173,35 @@
     padding: 0px;
     position: relative;
     bottom: 13px;
+}
+
+.albulm-track-total{
+    position: relative;
+    right: 45px;
+    bottom: 1px;
+    padding: 0px;
+    margin: 0px;
+    width: 180px;
+    font-family: 'Chakra Petch', sans-serif;;
+    
+}
+
+.albulm-track-release{
+    position: relative;
+    right: 45px;
+    top: 3px;
+    padding: 0px;
+    margin: 0px;
+    width: 180px;
+    font-family: 'Chakra Petch', sans-serif;;
+}
+
+.savedTotalTracks{
+    position: relative;
+    bottom: 138px;
+}
+
+.savedReleaseDate{
+    position: relative;
+    bottom: 48px;
 }

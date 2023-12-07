@@ -131,7 +131,6 @@
     margin-bottom: 5px;
     transition: 0.5s ease-out;
     overflow: visible;
-    position: relative;
     background-color: #F3F3F0;
    }
    
@@ -200,7 +199,7 @@
 .albulmImage{
     border: 2px solid #F3F3F0;
     position: relative;
-    bottom: 22px;
+    bottom: 85px;
 
 }
 .albulmImage:hover{
@@ -259,5 +258,14 @@
     position: relative;
     bottom: 15px;
    }
+   .albulmCard:hover {
+    border-color: #4CAF50;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+   }
    
+   .albulmCard:hover .card-button {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+   }
    

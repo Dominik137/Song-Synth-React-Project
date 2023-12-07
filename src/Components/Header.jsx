@@ -12,7 +12,7 @@ function Header(){
           <div className="space-x-4">
             <button onClick={() => { navigate('/') }} className="button">Home</button>
             <button onClick={() => { navigate('/about') }} className="button">About</button>
-            <button onClick={() => { navigate('/my-stats') }} className="button">My Stats</button>
+            <button onClick={() => { navigate('/my-stats') }} className="button">My Saves</button>
           </div>
         </div>
         </>
