@@ -1,0 +1,78 @@
+{
+  "savedArtists": [
+    {
+      "name": "Cults",
+      "image": {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab6761610000e5ebdc48abf40c40172713ed60cf",
+        "width": 640
+      },
+      "followers": 803385,
+      "artistLink": "https://open.spotify.com/artist/3Oim8XBPbznAa8Jj8QzNc8",
+      "id": 1
+    },
+    {
+      "name": "Mac DeMarco",
+      "image": {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab6761610000e5eb3cef7752073cbbd2cc04c6f0",
+        "width": 640
+      },
+      "followers": 4958410,
+      "artistLink": "https://open.spotify.com/artist/3Sz7ZnJQBIHsXLUSo0OQtM",
+      "id": 2
+    }
+  ],
+  "savedAlbulms": [
+    {
+      "name": "Faces",
+      "image": {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab67616d0000b273e4251cf5331ad74eaaeca36e",
+        "width": 640
+      },
+      "totalTracks": 25,
+      "releaseDate": "2021-10-15",
+      "albumLink": "https://open.spotify.com/album/5SKnXCvB4fcGSZu32o3LRY",
+      "id": 1
+    },
+    {
+      "name": "Pure Heroine",
+      "image": {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab67616d0000b273187331e276c898d39764cc98",
+        "width": 640
+      },
+      "totalTracks": 10,
+      "releaseDate": "2013-09-27",
+      "albumLink": "https://open.spotify.com/album/0rmhjUgoVa17LZuS8xWQ3v",
+      "id": 2
+    }
+  ],
+  "savedSongs": [
+    {
+      "name": "We (feat. CeeLo Green)",
+      "image": {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab67616d0000b2732e92f776279eaf45d14a33fd",
+        "width": 640
+      },
+      "trackNumber": 8,
+      "songLink": "https://open.spotify.com/track/4k5UZm89ZX0YAHUp55zpt9",
+      "id": 1,
+      "songId": ""
+    },
+    {
+      "name": "Mind Mischief",
+      "image": {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab67616d0000b273370c12f82872c9cfaee80193",
+        "width": 640
+      },
+      "trackNumber": 4,
+      "songLink": "https://open.spotify.com/track/6ewQE1dNPv9qqlnB1CxrvM",
+      "songId": "6ewQE1dNPv9qqlnB1CxrvM",
+      "id": 2
+    }
+  ]
+}

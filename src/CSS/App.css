@@ -1,0 +1,247 @@
+.button{
+    font-family: 'Chakra Petch', sans-serif;
+    position: relative;
+    bottom: 80px;
+    font-size: 30px;
+    text-decoration: none;
+    margin-left: 5px;
+    background-color: #F3F3F0;
+}
+.logInButton{
+    font-family: 'Chakra Petch', sans-serif;
+    position: relative;
+    bottom: 80px;
+    font-size: 30px;
+    text-decoration: none;
+    background-color: #F3F3F0;
+}
+.logInButton:hover{
+    background-color: #4CAF50; /* change the background color */
+    color: white;
+    cursor: pointer;
+}
+
+.logOutButton{
+    font-family: 'Chakra Petch', sans-serif;
+    position: relative;
+    bottom: 90px;
+    font-size: 30px;
+    text-decoration: none;
+    background-color: #F3F3F0;
+}
+
+.logOutButton:hover{
+    background-color: #4CAF50; /* change the background color */
+    color: white;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #4CAF50; /* change the background color */
+    color: white;
+    cursor: pointer;
+}
+.searchButton{
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 33px;
+    text-decoration: none;
+    background-color: #F3F3F0;
+    position: relative;
+    bottom: 50px;
+}
+.searchButton:hover{
+    background-color: #4CAF50; /* change the background color */
+    color: white;
+    cursor: pointer;
+}
+
+.saveButton{
+    font-family: 'Chakra Petch', sans-serif;
+    position: relative;
+    bottom: 12px;
+    font-size: 18px;
+    width: 120px;
+    text-decoration: none;
+    background-color: #F3F3F0;
+    font-weight: bold;
+}
+.saveButton:hover{
+    background-color: #4CAF50; /* change the background color */
+    color: white;
+    cursor: pointer;
+}
+.saveAlbButton{
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 12px;
+    width: 100px;
+    height: 80px;
+    position: relative;
+    left: 165px;
+    bottom: 190px;
+    text-decoration: none;
+    background-color: #F3F3F0;
+    font-weight: bold;
+
+}
+
+.saveAlbButton:hover{
+    background-color: #4CAF50; /* change the background color */
+    color: white;
+    cursor: pointer;
+}
+
+
+.showPlaylistButton{
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 28px;
+    text-decoration: none;
+    margin-bottom: 5px;
+    background-color: #F3F3F0;
+}
+.showPlaylistButton:hover{
+    background-color: #4CAF50; /* change the background color */
+    color: white;
+    cursor: pointer;
+}
+
+.anchor{
+    text-decoration: none;
+    color: black;
+}
+
+.myStatsText{
+    font-family: 'Chakra Petch', sans-serif;
+    position: relative;
+    
+    font-size: 15px;
+    text-decoration: none;
+    
+}
+.saveAlbulmName{
+    font-family: 'Chakra Petch', sans-serif;
+    position: relative;
+    bottom: 25px;
+    font-size: 20px;
+    text-decoration: none;
+    
+}
+
+.artistSearch{
+    margin-bottom: 20px;
+    width: 200px;
+    height: 42px;
+    position: relative;
+    bottom: 52px;
+    font-size: 25px;
+    margin-right: 5px ;
+}
+
+.logoutLogin{
+    font-size: 40px;
+}
+.searchArtistCont{
+    position: relative;
+    left: 425px;
+}
+
+.reulstsCont{
+    position: relative;
+    left: 425px;
+}
+
+.playlistsCont{
+    position: relative;
+}
+
+.searchArtisth1{
+    font-size: 60px;
+    position: relative;
+    bottom: 50px;
+    text-decoration: none;
+}
+
+.album-text-title{
+    padding: 0px;
+    position: relative;
+    bottom: 19px;
+    right: 5px;
+    font-size: 13px;
+    
+}
+
+.albulmbabyDiv{
+    padding: 0px;
+    position: relative;
+    bottom: 13px;
+}
+
+.albulm-track-total{
+    position: relative;
+    right: 45px;
+    bottom: 1px;
+    padding: 0px;
+    margin: 0px;
+    width: 180px;
+    font-family: 'Chakra Petch', sans-serif;;
+    
+}
+
+.albulm-track-release{
+    position: relative;
+    right: 45px;
+    top: 3px;
+    padding: 0px;
+    margin: 0px;
+    width: 180px;
+    font-family: 'Chakra Petch', sans-serif;;
+}
+
+.savedTotalTracks{
+    position: relative;
+    bottom: 138px;
+}
+
+.savedReleaseDate{
+    position: relative;
+    bottom: 48px;
+}
+.songNames {
+    font-family: 'Chakra Petch', sans-serif;
+    position: relative;
+    background-color: #F3F3F0;
+    /* Add some padding to create space between texts */
+    transition: color 0.3s; /* Add a smooth transition for color change */
+    font-size: 25px;
+    height: 15px;
+    bottom: 20px;
+}
+
+.songNames:hover {
+    color: #4CAF50; /* Change font color to green on hover */
+    cursor: pointer;
+}
+
+.songsTitle{
+font-size: 30px;
+padding: 0px;
+height: 20px;
+position: relative;
+bottom: 28px;
+}
+
+.saveSongButton{
+    font-family: 'Chakra Petch', sans-serif;
+    position: relative;
+    left: 230px;
+    bottom: 50px;
+    font-size: 18px;
+    width: auto;
+    text-decoration: none;
+    background-color: #F3F3F0;
+    font-weight: bold;
+}
+.saveSongButton:hover{
+    background-color: #4CAF50; /* change the background color */
+    color: white;
+    cursor: pointer;
+}

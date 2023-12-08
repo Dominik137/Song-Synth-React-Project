@@ -1,13 +1,13 @@
 import React from "react"
-import Header from "./Header"
+import SpotifyLogin from "./SpotifyLogin"
 
 function Homepage(){
+
 return (
 <>
-<div>
-    
-    <Header />
-</div>
+<div >
+    <SpotifyLogin />
+    </div>
 </>
 )
 }
