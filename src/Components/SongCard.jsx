@@ -5,7 +5,6 @@ const SongCard = ({ albumId, albulmCover }) => {
   const [token, setToken] = useState("");
   const [data, setData] = useState([]);
   const songEndPoint = `https://api.spotify.com/v1/albums/${albumId}/tracks`;
-
   useEffect(() => {
     if (localStorage.getItem("token")) {
       setToken(localStorage.getItem("token"));
@@ -24,13 +23,14 @@ const SongCard = ({ albumId, albulmCover }) => {
         console.error("Error fetching data:", error);
       });
   }, [songEndPoint, token, albumId]); // Include token and songEndPoint as dependencies
-console.log(data)
+// console.log(data)
   return (
     <>
     
     <div className="songCard">
         <h1 className="songsTitle">Songs!</h1>
       {data.items?.map((item) => (
+        
         <>
             <div>
                 <a className="songNames" onClick={()=>{window.open(`${item.external_urls.spotify}`)}}>{item.track_number}. {item.name}
@@ -46,7 +46,9 @@ console.log(data)
                     "name": item.name,
                     "image": albulmCover,
                     "trackNumber": item.track_number,
-                    "songLink": item.external_urls.spotify
+                    "songLink": item.external_urls.spotify,
+                    "songId": item.id,
+                    "artistName": item.artists.name
                 })
                  })
                  
@@ -60,5 +62,6 @@ console.log(data)
     </>
   );
 };
+
 
 export default SongCard;

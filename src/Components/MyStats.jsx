@@ -51,7 +51,7 @@ function MyStats(){
     },[])
 
     const mapSavedSongs = savedSongs.map((item)=>{
-        return(<div onClick={()=>{window.open(`${item.songLink}`)}} className="savedArtistCard">
+        return(<div onClick={()=>{window.open(`${item.songLink}`)}} className="savedSongCard">
             <h1 className="saveAlbulmName">{item.name}</h1>
             {item.image ? <img width={"85px"} height={"85px"} src={item.image.url} alt=""/> : <div>No Image</div>}
         </div>)
@@ -70,7 +70,7 @@ function MyStats(){
         </div>
         <div className="middleColumn">
         <h1>Saved Songs!</h1>  
-            {mapSavedSongs}
+           {mapSavedSongs}
         </div>
         <div className="column">
             <h1>Saved Albums!</h1>

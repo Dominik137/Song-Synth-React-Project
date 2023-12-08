@@ -28,10 +28,11 @@ const ArtistAlbumCards = ({id}) => {
           console.log(error);
         }
       };
-  console.log(data)
+  
       handleGetAlbulms(); // This will run only once when the component mounts
   
     }, [albulmListEnpoint, token, id]); 
+
     return (
         <>
         <div>

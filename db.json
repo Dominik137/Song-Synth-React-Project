@@ -1,17 +1,6 @@
 {
   "savedArtists": [
     {
-      "name": "Mac Miller",
-      "image": {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab6761610000e5ebed3b89aa602145fde71a163a",
-        "width": 640
-      },
-      "followers": 9842339,
-      "artistLink": "https://open.spotify.com/artist/4LLpKhyESsyAXpc4laK94U",
-      "id": 1
-    },
-    {
       "name": "Cults",
       "image": {
         "height": 640,
@@ -20,18 +9,18 @@
       },
       "followers": 803385,
       "artistLink": "https://open.spotify.com/artist/3Oim8XBPbznAa8Jj8QzNc8",
-      "id": 2
+      "id": 1
     },
     {
-      "name": "Mac Miller",
+      "name": "Mac DeMarco",
       "image": {
         "height": 640,
-        "url": "https://i.scdn.co/image/ab6761610000e5ebed3b89aa602145fde71a163a",
+        "url": "https://i.scdn.co/image/ab6761610000e5eb3cef7752073cbbd2cc04c6f0",
         "width": 640
       },
-      "followers": 9842339,
-      "artistLink": "https://open.spotify.com/artist/4LLpKhyESsyAXpc4laK94U",
-      "id": 3
+      "followers": 4958410,
+      "artistLink": "https://open.spotify.com/artist/3Sz7ZnJQBIHsXLUSo0OQtM",
+      "id": 2
     }
   ],
   "savedAlbulms": [
@@ -48,40 +37,16 @@
       "id": 1
     },
     {
-      "name": "Cults",
+      "name": "Pure Heroine",
       "image": {
         "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b2734f4119f2a4b0dab40391ac24",
-        "width": 640
-      },
-      "totalTracks": 13,
-      "releaseDate": "2011-06-07",
-      "albumLink": "https://open.spotify.com/album/5EogSa1pT202kPV4P30YJu",
-      "id": 2
-    },
-    {
-      "name": "Twin Fantasy",
-      "image": {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b2732764cdf400a1d859640539a9",
+        "url": "https://i.scdn.co/image/ab67616d0000b273187331e276c898d39764cc98",
         "width": 640
       },
       "totalTracks": 10,
-      "releaseDate": "2018-02-16",
-      "albumLink": "https://open.spotify.com/album/6gDtROOIYa6OQxwhDNkDRM",
-      "id": 3
-    },
-    {
-      "name": "folklore (deluxe version)",
-      "image": {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b273c288028c2592f400dd0b9233",
-        "width": 640
-      },
-      "totalTracks": 17,
-      "releaseDate": "2020-08-18",
-      "albumLink": "https://open.spotify.com/album/1pzvBxYgT6OVwJLtHkrdQK",
-      "id": 4
+      "releaseDate": "2013-09-27",
+      "albumLink": "https://open.spotify.com/album/0rmhjUgoVa17LZuS8xWQ3v",
+      "id": 2
     }
   ],
   "savedSongs": [
@@ -94,29 +59,20 @@
       },
       "trackNumber": 8,
       "songLink": "https://open.spotify.com/track/4k5UZm89ZX0YAHUp55zpt9",
-      "id": 1
+      "id": 1,
+      "songId": ""
     },
     {
-      "name": "Bumper",
+      "name": "Mind Mischief",
       "image": {
         "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b2734f4119f2a4b0dab40391ac24",
+        "url": "https://i.scdn.co/image/ab67616d0000b273370c12f82872c9cfaee80193",
         "width": 640
       },
-      "trackNumber": 10,
-      "songLink": "https://open.spotify.com/track/6FkIuSdcyAqLHd12Cz95DZ",
+      "trackNumber": 4,
+      "songLink": "https://open.spotify.com/track/6ewQE1dNPv9qqlnB1CxrvM",
+      "songId": "6ewQE1dNPv9qqlnB1CxrvM",
       "id": 2
-    },
-    {
-      "name": "Bodys",
-      "image": {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b2732764cdf400a1d859640539a9",
-        "width": 640
-      },
-      "trackNumber": 6,
-      "songLink": "https://open.spotify.com/track/1Pbs2eCcX9p2onaAvMYvhk",
-      "id": 3
     }
   ]
 }

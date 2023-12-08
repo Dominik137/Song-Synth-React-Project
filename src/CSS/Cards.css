@@ -326,3 +326,32 @@
     transform: translate(-50%, 50%);
     opacity: 1;
    }
+
+   .savedSongCard {
+    width: auto;
+    height: auto;
+    padding: 1.8rem;
+    border: 3px solid #F3F3F0;
+    margin-bottom: 5px;
+    transition: 0.5s ease-out;
+    overflow: visible;
+    background-color: #F3F3F0;
+   }
+   
+   .savedSongCard-details {
+    color: black;
+    height: 100%;
+    gap: .5em;
+    display: grid;
+    place-content: center;
+   }
+   .savedSongCard:hover {
+    border-color: #4CAF50;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+   }
+   
+   .savedSongCard:hover .card-button {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+   }
