@@ -70,7 +70,7 @@ function SpotifyLogin(){
     }}
     className="card" key={artist.id}>
         {artist.images.length ? <img className="artistImage"
-        onClick={()=>{window.open(`${artist.external_urls.spotify}`)}}
+        onClick={(e)=>{{e.stopPropagation()}window.open(`${artist.external_urls.spotify}`)}}
          width={"100px"} height={"100px"} src={artist.images[0].url} alt=""/> : <div>No Image</div>}
         <h1>{artist.name}</h1>
         <h2 className="">Followers: {artist.followers.total.toLocaleString()}</h2>
@@ -97,7 +97,7 @@ function SpotifyLogin(){
     return(
         <>
 
-        <div className="header">
+       
         <div className="">{!token ?
             <button className="logInButton">
                 <a className="anchor"
@@ -106,7 +106,7 @@ function SpotifyLogin(){
             : <button className="logOutButton"
             onClick={logout}>Logout</button>}
             </div>
-        </div>
+   
           
         <div className="container">
           

@@ -49,7 +49,7 @@ const ArtistAlbumCards = ({id}) => {
             <p className="albulm-track-release">Release Date: <br/>
             {item.release_date}</p></div>
              <div>{item.images.length ? <img className="albulmImage"
-             onClick={()=>{window.open(`${item.external_urls.spotify}`)}}
+             onClick={(e)=>{{e.stopPropagation()}window.open(`${item.external_urls.spotify}`)}}
               width={"110px"} height={"110px"} src={item.images[0].url} alt=""/> : <div>No Image</div>}</div>
               
              <button onClick={(e)=>{

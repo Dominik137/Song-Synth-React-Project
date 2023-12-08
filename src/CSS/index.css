@@ -16,16 +16,18 @@
     font-family: Chakra Petch;
     font-weight: bold,;
     font-style: italic;
+    position: relative;
+    bottom: 50px;
   }
 
     .column {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding: 20px;
     text-align: center;
   }
   
   .middleColumn {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding: 20px;
     text-align: center;
   

@@ -10,7 +10,7 @@
 .logInButton{
     font-family: 'Chakra Petch', sans-serif;
     position: relative;
-    bottom: 60px;
+    bottom: 80px;
     font-size: 30px;
     text-decoration: none;
     background-color: #F3F3F0;
@@ -24,7 +24,7 @@
 .logOutButton{
     font-family: 'Chakra Petch', sans-serif;
     position: relative;
-    bottom: 70px;
+    bottom: 90px;
     font-size: 30px;
     text-decoration: none;
     background-color: #F3F3F0;
