@@ -23,7 +23,7 @@ const SongCard = ({ albumId, albulmCover }) => {
         console.error("Error fetching data:", error);
       });
   }, [songEndPoint, token, albumId]); // Include token and songEndPoint as dependencies
-// console.log(data)
+console.log(data)
   return (
     <>
     
@@ -48,10 +48,10 @@ const SongCard = ({ albumId, albulmCover }) => {
                     "trackNumber": item.track_number,
                     "songLink": item.external_urls.spotify,
                     "songId": item.id,
-                    "artistName": item.artists.name
+                    "artistName": item.artists[0].name
                 })
                  })
-                 
+                
             }}
                     
                  className="saveSongButton">Save</button>

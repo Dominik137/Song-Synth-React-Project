@@ -13,14 +13,34 @@ function MyStats(){
         .then((resp)=>resp.json())
         .then((data)=>setSavedArtists(data))
     },[])
-    console.log(savedArtists)
+    
+    const handleDeleteArtists = (id) => {
+        fetch(`http://localhost:3000/savedArtists/${id}`, {
+          method: "DELETE"
+        })
+        .then(response => {
+          if (response.ok) {
+            // Update the state to reflect the deleted item
+            setSavedArtists(prevSavedArtists => prevSavedArtists.filter(item => item.id !== id));
+          }
+        })
+        .catch(error => {
+          console.error('Error deleting the item:', error);
+        });
+      };
+      
+    
 
     const mapSavedArtists = savedArtists.map((item)=>{
+        const id = item.id
         return(<div onClick={()=>{window.open(`${item.artistLink}`)}}
         className="savedArtistCard">
             <h1 className="myStatsText">{item.name}</h1>
             <p className="myStatsText">Followers: {item.followers.toLocaleString()}</p>
             {item.image ? <img width={"85px"} height={"85px"} src={item.image.url} alt=""/> : <div>No Image</div>}
+            <div><button className="deleteButton" onClick={(e)=>{
+                 e.stopPropagation()
+                 handleDeleteArtists(id)}}>Delete</button></div>
 
         </div>)
 
@@ -31,29 +51,74 @@ function MyStats(){
         .then((resp)=>resp.json())
         .then((data)=>setSavedAlbulms(data))
     },[])
+
+
+    const handleDeleteAlbulms = (id) => {
+        fetch(`http://localhost:3000/savedAlbulms/${id}`, {
+          method: "DELETE"
+        })
+        .then(response => {
+          if (response.ok) {
+            // Update the state to reflect the deleted item
+            setSavedAlbulms(prevSavedAlbulms => prevSavedAlbulms.filter(item => item.id !== id));
+          }
+        })
+        .catch(error => {
+          console.error('Error deleting the item:', error);
+        });
+      };
+
     console.log(savedAlbulms)
 
     const mapSavedAlbulms = savedAlbulms.map((item)=>{
+        const id = item.id
         return(<div onClick={()=>{window.open(`${item.albumLink}`)}}
         className="savedArtistCard">
             <h1 className="saveAlbulmName">{item.name}</h1>
             {item.image ? <img width={"85px"} height={"85px"} src={item.image.url} alt=""/> : <div>No Image</div>}
             <p className="savedTotalTracks">Total Tracks: {item.totalTracks}</p>
             <p className="savedReleaseDate">Release Date: {item.releaseDate} </p>
+            <div><button className="deleteButton" 
+                onClick={(e)=>{
+                    e.stopPropagation()
+                    handleDeleteAlbulms(id)}}
+            >Delete</button></div>
         </div>)
 
     })
-
+// our saved songs displaying
     useState(()=>{
         fetch('http://localhost:3000/savedSongs')
         .then((resp)=>resp.json())
-        .then((data)=>setSavedSongs(data))
+        .then((data)=>setSavedSongs(data));
     },[])
-
+    const handleDeleteSongs = (id) => {
+        fetch(`http://localhost:3000/savedSongs/${id}`, {
+          method: "DELETE"
+        })
+        .then(response => {
+          if (response.ok) {
+            // Update the state to reflect the deleted item
+            setSavedSongs(prevSavedSongs => prevSavedSongs.filter(item => item.id !== id));
+          }
+        })
+        .catch(error => {
+          console.error('Error deleting the item:', error);
+        });
+      };
+      
     const mapSavedSongs = savedSongs.map((item)=>{
+        const id = item.id
         return(<div onClick={()=>{window.open(`${item.songLink}`)}} className="savedSongCard">
             <h1 className="saveAlbulmName">{item.name}</h1>
-            {item.image ? <img width={"85px"} height={"85px"} src={item.image.url} alt=""/> : <div>No Image</div>}
+            <h2 className="savedSongArtistText">{item.artistName}</h2>
+            <div>
+                {item.image ? <img width={"85px"} height={"85px"} src={item.image.url} alt=""/> : <div>No Image</div>}
+            </div>
+            <button className="deleteButton" onClick={(e)=>{
+                 e.stopPropagation()
+                 handleDeleteSongs(id)}}>Delete
+            </button>
         </div>)
 
     })
