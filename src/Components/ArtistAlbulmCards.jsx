@@ -32,7 +32,7 @@ const ArtistAlbumCards = ({id}) => {
       handleGetAlbulms(); // This will run only once when the component mounts
   
     }, [albulmListEnpoint, token, id]); 
-
+// console.log(data)
     return (
         <>
         <div>

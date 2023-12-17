@@ -245,3 +245,28 @@ bottom: 28px;
     color: white;
     cursor: pointer;
 }
+
+.savedSongArtistText{
+    font-size: 15px;
+padding: 0px;
+height: 20px;
+position: relative;
+bottom: 10px;
+color: grey;
+}
+
+.deleteButton{
+    font-family: 'Chakra Petch', sans-serif;
+    position: relative;
+    top: 3px;
+    font-size: 18px;
+    width: 120px;
+    text-decoration: none;
+    background-color: #F3F3F0;
+    font-weight: bold;
+}
+.deleteButton:hover{
+    background-color: #4CAF50; /* change the background color */
+    color: white;
+    cursor: pointer;
+}

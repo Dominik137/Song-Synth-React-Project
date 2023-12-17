@@ -21,6 +21,17 @@
       "followers": 4958410,
       "artistLink": "https://open.spotify.com/artist/3Sz7ZnJQBIHsXLUSo0OQtM",
       "id": 2
+    },
+    {
+      "name": "J. Cole",
+      "image": {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab6761610000e5ebadd503b411a712e277895c8a",
+        "width": 640
+      },
+      "followers": 22184836,
+      "artistLink": "https://open.spotify.com/artist/6l3HvQ5sa6mXTsMTB19rO5",
+      "id": 4
     }
   ],
   "savedAlbulms": [
@@ -47,21 +58,21 @@
       "releaseDate": "2013-09-27",
       "albumLink": "https://open.spotify.com/album/0rmhjUgoVa17LZuS8xWQ3v",
       "id": 2
+    },
+    {
+      "name": "The Off-Season",
+      "image": {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab67616d0000b27310e6745bb2f179dd3616b85f",
+        "width": 640
+      },
+      "totalTracks": 12,
+      "releaseDate": "2021-05-14",
+      "albumLink": "https://open.spotify.com/album/4JAvwK4APPArjIsOdGoJXX",
+      "id": 3
     }
   ],
   "savedSongs": [
-    {
-      "name": "We (feat. CeeLo Green)",
-      "image": {
-        "height": 640,
-        "url": "https://i.scdn.co/image/ab67616d0000b2732e92f776279eaf45d14a33fd",
-        "width": 640
-      },
-      "trackNumber": 8,
-      "songLink": "https://open.spotify.com/track/4k5UZm89ZX0YAHUp55zpt9",
-      "id": 1,
-      "songId": ""
-    },
     {
       "name": "Mind Mischief",
       "image": {
@@ -72,7 +83,34 @@
       "trackNumber": 4,
       "songLink": "https://open.spotify.com/track/6ewQE1dNPv9qqlnB1CxrvM",
       "songId": "6ewQE1dNPv9qqlnB1CxrvM",
+      "artistName": "Tame Impala",
+      "id": 1
+    },
+    {
+      "name": "White Teeth Teens",
+      "image": {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab67616d0000b273187331e276c898d39764cc98",
+        "width": 640
+      },
+      "trackNumber": 9,
+      "songLink": "https://open.spotify.com/track/35kahykNu00FPysz3C2euR",
+      "songId": "35kahykNu00FPysz3C2euR",
+      "artistName": "Lorde",
       "id": 2
+    },
+    {
+      "name": "Ribs",
+      "image": {
+        "height": 640,
+        "url": "https://i.scdn.co/image/ab67616d0000b273187331e276c898d39764cc98",
+        "width": 640
+      },
+      "trackNumber": 4,
+      "songLink": "https://open.spotify.com/track/2MvvoeRt8NcOXWESkxWn3g",
+      "songId": "2MvvoeRt8NcOXWESkxWn3g",
+      "artistName": "Lorde",
+      "id": 3
     }
   ]
 }
